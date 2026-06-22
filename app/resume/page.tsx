@@ -1,3 +1,6 @@
+import SectionHeading from "@/components/SectionHeading";
+import Tag from "@/components/Tag";
+
 const skills = [
   {
     category: "Languages",
@@ -95,21 +98,14 @@ export default function ResumePage() {
 
         {/* Skills */}
         <section className="mb-12">
-          <h2 className="font-mono text-xs text-cyber-muted uppercase tracking-widest mb-5 pb-2 border-b border-cyber-border">
-            Technical Skills
-          </h2>
+          <SectionHeading>Technical Skills</SectionHeading>
           <div className="flex flex-col gap-4">
             {skills.map(({ category, items }) => (
               <div key={category} className="flex flex-col sm:flex-row sm:items-start gap-2 sm:gap-4">
                 <span className="shrink-0 w-48 text-cyber-muted text-sm">{category}</span>
                 <div className="flex flex-wrap gap-2">
                   {items.map((item) => (
-                    <span
-                      key={item}
-                      className="font-mono text-xs px-2 py-0.5 rounded border border-cyber-border text-cyber-text"
-                    >
-                      {item}
-                    </span>
+                    <Tag key={item}>{item}</Tag>
                   ))}
                 </div>
               </div>
@@ -119,9 +115,7 @@ export default function ResumePage() {
 
         {/* Experience */}
         <section className="mb-12">
-          <h2 className="font-mono text-xs text-cyber-muted uppercase tracking-widest mb-5 pb-2 border-b border-cyber-border">
-            Experience
-          </h2>
+          <SectionHeading>Experience</SectionHeading>
           <div className="flex flex-col gap-8">
             {experience.map((role) => (
               <div key={`${role.company}-${role.title}`}>
@@ -148,9 +142,7 @@ export default function ResumePage() {
 
         {/* Education */}
         <section>
-          <h2 className="font-mono text-xs text-cyber-muted uppercase tracking-widest mb-5 pb-2 border-b border-cyber-border">
-            Education
-          </h2>
+          <SectionHeading>Education</SectionHeading>
           <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1">
             <div>
               <p className="font-semibold text-white">Bachelor of Science in Computer Science</p>
