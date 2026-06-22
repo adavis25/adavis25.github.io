@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 const navLinks = [
   { href: "/", label: "Home" },
   { href: "/projects", label: "Projects" },
+  { href: "/resume", label: "Resume" },
   { href: "/contact", label: "Contact" },
 ];
 
@@ -36,14 +37,6 @@ export default function Navbar() {
               {label}
             </Link>
           ))}
-          <a
-            href="/resume.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-sm font-medium px-4 py-1.5 border border-cyber-accent text-cyber-accent rounded hover:bg-cyber-accent hover:text-black transition"
-          >
-            Resume
-          </a>
         </div>
       </div>
     </nav>
