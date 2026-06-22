@@ -136,16 +136,6 @@ export default function ContactPage() {
           {/* Direct contact links */}
           <div className="flex flex-col gap-8 lg:pt-2">
             <div className="flex flex-col gap-3">
-              <p className="font-mono text-xs text-cyber-muted uppercase tracking-widest">Email</p>
-              <a
-                href="mailto:calexdavis@protonmail.com"
-                className="text-cyber-text hover:text-cyber-accent transition text-sm"
-              >
-                calexdavis@protonmail.com
-              </a>
-            </div>
-
-            <div className="flex flex-col gap-3">
               <p className="font-mono text-xs text-cyber-muted uppercase tracking-widest">Elsewhere</p>
               <div className="flex gap-4">
                 <a
