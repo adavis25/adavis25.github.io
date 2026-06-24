@@ -5,9 +5,6 @@ export default function Home() {
   return (
     <main className="min-h-[calc(100vh-4rem)] flex flex-col items-center justify-center px-6">
       <div className="max-w-2xl w-full">
-        <p className="text-cyber-accent font-mono text-sm mb-3 tracking-widest uppercase">
-          Hi, my name is
-        </p>
         <h1 className="text-5xl font-bold text-white mb-2">Alex Davis</h1>
         <h2 className="text-3xl font-semibold text-cyber-muted mb-6">
           Full-Stack &amp; Data Engineer
